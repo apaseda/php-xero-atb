@@ -24,7 +24,7 @@ define ( "XRO_APP_TYPE", "Public" );
 /**
  * Set a user agent string that matches your application name as set in the Xero developer centre
  */
-$useragent = "ABK Sales";
+$useragent = "abk sales mobil";
 
 /**
  * Set your callback url or set 'oob' if none required
@@ -32,7 +32,7 @@ $useragent = "ABK Sales";
  * Go to https://api.xero.com/Application/List and select your application
  * Under OAuth callback domain enter localhost or whatever domain you are using.
  */
-define ( "OAUTH_CALLBACK", 'https://abksales.com/xero/authenticate.php' );
+define ( "OAUTH_CALLBACK", 'https://frozen-spire-68357.herokuapp.com/authenticate.php' );
 
 /**
  * Application specific settings
