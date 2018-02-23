@@ -32,7 +32,7 @@ $useragent = "ABK Sales";
  * Go to https://api.xero.com/Application/List and select your application
  * Under OAuth callback domain enter localhost or whatever domain you are using.
  */
-define ( "OAUTH_CALLBACK", 'https://frozen-spire-68357.herokuapp.com/authenticate.php' );
+define ( "OAUTH_CALLBACK", 'https://abksales.com/xero/authenticate.php' );
 
 /**
  * Application specific settings
