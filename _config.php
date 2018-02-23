@@ -37,9 +37,18 @@ define("OAUTH_CALLBACK",     'https://abksales.com/xero/authenticate.php');
  * rsa_public_key:  application certificate public cert - not needed for public applications
  */
 
-$signatures = array(
+/*$signatures = array(
         'consumer_key' => 'PRSP3B5NG967KKF2WZU0MYLCCZVRGM',
         'shared_secret' => '9ZQBJMHLU9JF7FG5OKCNJWD9F8WADX',
+        // API versions
+        'core_version' => '2.0',
+        'payroll_version' => '1.0',
+        'file_version' => '1.0' 
+);*/
+
+$signatures = array(
+        'consumer_key' => 'GLBKW8T7ZGMKZWFCTQWGJWNIRLCF95',
+        'shared_secret' => 'GECRPAYDNBPSSMVLUKSVCBLNLNV9ZL',
         // API versions
         'core_version' => '2.0',
         'payroll_version' => '1.0',

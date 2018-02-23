@@ -32,7 +32,7 @@ $useragent = "ABK Sales";
  * Go to https://api.xero.com/Application/List and select your application
  * Under OAuth callback domain enter localhost or whatever domain you are using.
  */
-define ( "OAUTH_CALLBACK", 'https://abksales.com/xero/authenticate.php' );
+define ( "OAUTH_CALLBACK", 'https://frozen-spire-68357.herokuapp.com/authenticate.php' );
 
 /**
  * Application specific settings
@@ -82,6 +82,7 @@ if ($checkErrors > 0) {
     $here = XeroOAuth::php_self ();
     session_start ();
 
+
     //get the session id
     $usersessiontoken = session_id();
 
@@ -105,8 +106,9 @@ if ($checkErrors > 0) {
             
             unset ( $_SESSION ['oauth'] );
             // header ( "'" . "Location: abksales://atbtechsoft.com/?token=" . $usersessiontoken . "'"  );
-            // header ( "'" . "Location: abksales.com/abk/login?token=" . $usersessiontoken . "'"  );
-            header ( "Location: abksales.com/abk/login?token=");
+            header ( "Location: https://frozen-spire-68357.herokuapp.com/?token=" );
+            // header ( "Location: abksales.com/abk/login?token=");
+            
         } else {
             outputError ( $XeroOAuth );
         }
