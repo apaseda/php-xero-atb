@@ -13,9 +13,7 @@
         "classmap": ["lib/"]
     },
     "require": {
-        "ext-openssl": "*",
-        "ext-curl": "*",
-        "php": ">=7.0.0"
+        "php": "^7.1.11"
     }
    
 }
